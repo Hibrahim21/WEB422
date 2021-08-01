@@ -1,0 +1,1 @@
+mongorestore --host SenecaWeb-shard-0/senecaweb-shard-00-00-clybo.mongodb.net:27017,senecaweb-shard-00-01-clybo.mongodb.net:27017,senecaweb-shard-00-02-clybo.mongodb.net:27017 --ssl --username hibrahim21 --password AuHH217511 --authenticationDatabase admin -d teams-api-data 

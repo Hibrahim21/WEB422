@@ -1,0 +1,53 @@
+@interface
+class Vehicles {
+    int size;
+    
+}
+
+class Bikes{
+
+    public int size(int s){
+        size = s;
+    }
+
+    int setSize(int s){
+        size = s;
+
+    }
+
+    int getSize(){
+        return size;
+    }
+}
+
+class Truck{
+    
+    public int size(int s){
+        bikeSize = size;
+    }
+
+
+}
+
+class Van{
+    
+    public int size(int size){
+        size = s;
+    }
+}
+
+class PrakingLot{
+    
+    int lots;
+
+    int getLot(){
+        return lots;
+
+    }
+
+    int setLot(int lot){
+        lots = lot;
+    }
+
+
+}

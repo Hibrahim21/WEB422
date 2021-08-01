@@ -1,0 +1,31 @@
+<div *ngIf='loadingError'>
+    <p class='text-center'><b>The requested information could not be retrieved!</b></p>
+  </div>
+  <div class="center" *ngIf='!loadingError'>
+    <h2>Positions</h2>
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non odio sed eros tristique bibendum.</p>
+  </div>
+  <div class="container" *ngIf='!loadingError'>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="table-responsive">
+                <table class="table table-condensed table-hover">
+                    <thead>
+                        <tr>
+                            <th>Position Title</th>
+                            <th>Position Description</th>
+                            <th>Salary</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let data of positions" (click)="routePosition(data._id)">
+                            <td>{{data.PositionName}}</td>
+                            <td>{{data.PositionDescription}}</td> 
+                            <td>${{data.PositionBaseSalary | number:'.2'}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+  </div>

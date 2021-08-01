@@ -1,0 +1,11 @@
+#data{
+    max-height: 300px;
+    overflow: auto;
+}
+
+#changed-padding
+    {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        max-width:100%;
+        padding:0 15px; 
+    }
